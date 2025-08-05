@@ -30,6 +30,7 @@ For this project, Ollama was used to run the models inside a Docker Container.
   - Generated Reply
     - Leave blank
 
+<img width="1000" height="400" alt="Image" src="https://github.com/user-attachments/assets/4f7cc17d-305c-44e0-bfc6-2dfb0aec00f5" />
 
 
 
