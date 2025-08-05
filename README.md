@@ -1,8 +1,11 @@
 # Benchmarking-VLMs
 
 ## Purpose
-Purpose of this project is to benchmark various VLMs (Vision Language Models) to determine the best for use.
-For this project, Ollama was used to run the models inside a Docker Container.
+Purpose of this project is to benchmark various VLMs (Vision Language Models) to determine the best for use.  
+For this project, Ollama was used to run the models inside a Docker Container.  
+
+## Models used
+Models used in this project were [LLaVA 1.5 7B](https://ollama.com/library/llava:7b), [Qwen2.5VL 3B](https://ollama.com/library/qwen2.5vl:3b) and [Gemma3 4B](https://ollama.com/library/gemma3:4b).
 
 ## Prerequisites
  - Ubuntu 22.04
@@ -10,7 +13,7 @@ For this project, Ollama was used to run the models inside a Docker Container.
  - Docker is installed.
    - To install Docker, visit [here.](https://docs.docker.com/engine/install/ubuntu/)
 
-## File Setup Instructions
+## Input Setup Instructions
 - Have a folder of images, varying in locations.
   -  All images formatted in .jpg
   -  All images labelled as a number, starting from 1.
@@ -30,7 +33,16 @@ For this project, Ollama was used to run the models inside a Docker Container.
   - Generated Reply
     - Leave blank
 
+**Example of excel sheet:**
+
 <img width="1000" height="400" alt="Image" src="https://github.com/user-attachments/assets/4f7cc17d-305c-44e0-bfc6-2dfb0aec00f5" />
 
+## Building Docker Image
+In docker file, copy your excel file into /app.
+Replace `excel_file` with the name of your excel file.
+
+```
+COPY excel_file /app
+```
 
 
