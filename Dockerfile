@@ -5,7 +5,7 @@ WORKDIR /app
 # Copy your Python applications files
 COPY excel_file.xlsx /app
 COPY Inference.py /app
-COPY train_4 /app/train_4/
+COPY images_folder /app/images_folder/
 
 # Install Python and dependencies
 RUN apt-get update && apt-get install -y python3 python3-pip -y curl \
