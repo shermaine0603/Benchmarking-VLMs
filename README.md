@@ -38,6 +38,11 @@ Models used in this project were [LLaVA 1.5 7B](https://ollama.com/library/llava
 <img width="1000" height="400" alt="Image" src="https://github.com/user-attachments/assets/4f7cc17d-305c-44e0-bfc6-2dfb0aec00f5" />
 
 ## Building Docker Image
+Git clone this repo first with:
+```
+git clone https://github.com/shermaine0603/Benchmarking-VLMs.git
+```
+
 In dockerfile, copy your excel file into /app.
 Replace `excel_file.xlsx` with the name of your excel file.
 
@@ -98,8 +103,16 @@ In line 28, edit the line to your image folder:
 folder_name = "images_folder"
 ```
 
-## Run the script
-Run this line in terminal for the models to start analysing the images and answering their queries:
+## Running the script
+Execute the python script to start the program:
 ```
 python3 Inference.py
 ```
+<br/>A prompt will first appear asking for your choice in model, key in either "llava", "qwen" or "gemma".
+> Please pick the model you want to use (llava or qwen or gemma): 
+
+<br/>The model will print out the image name and answer to the query whenever it finishes analysing the image and answering its query.  
+<img width="50" height="370" alt="image" src="https://github.com/user-attachments/assets/ba3587ad-b967-4c1d-b606-580d330afd59" />  
+The script works if you see the following:  
+<img width="400" height="370" alt="image" src="https://github.com/user-attachments/assets/0c2c08a3-a934-476b-968d-04e54b3a4365" />
+
