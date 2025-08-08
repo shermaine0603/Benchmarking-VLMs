@@ -55,7 +55,7 @@ for i in range(len(excel_data)):
     elif "no" in reply.lower():
         ws[cell_no] = 'no'
     else:
-        ws[cell_no] = ''
+        continue
 
     wb.save(excel_file)
     print(i+1)
