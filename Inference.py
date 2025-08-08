@@ -24,8 +24,8 @@ while True:
 
 model_name = get_model(model)
 
-excel_file = "excel_file.xlsx"
-folder_name = "images_folder"
+excel_file = "Images_and_Queries.xlsx"
+folder_name = "train_4"
 img_dataset_direct = "./" + folder_name + "/"
 
 excel_data = pd.read_excel(excel_file)
